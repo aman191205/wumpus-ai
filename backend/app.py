@@ -4,7 +4,7 @@ from world import WumpusWorld
 from agent import Agent
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Global session state
 world = None
@@ -66,5 +66,5 @@ def state():
         return jsonify({'error': 'No game in progress'}), 400
     return jsonify({'world': world.get_state(), 'agent': agent.get_state()})
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+if __name__ == '__main__':
+    app.run()
