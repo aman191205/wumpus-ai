@@ -5,6 +5,8 @@
 ---
 
 ## Project Structure
+
+```text
 wumpus-ai/
 ├── backend/
 │   ├── app.py
@@ -13,11 +15,13 @@ wumpus-ai/
 │   ├── kb.py
 │   └── resolution.py
 └── frontend/
-└── src/
-├── App.js
-├── Grid.js
-├── Dashboard.js
-└── api.js
+    └── src/
+        ├── App.js
+        ├── Grid.js
+        ├── Dashboard.js
+        └── api.js
+```
+
 ---
 
 ## Setup & Run
